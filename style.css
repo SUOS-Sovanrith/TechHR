@@ -32,7 +32,7 @@ body {
     font-weight: bold;
 }
 
-@media (max-width:420px) {
+@media (max-width:758px) {
     #top-bar{
         justify-content: center;
     }
@@ -41,18 +41,14 @@ body {
     }
 }
 
-#social{
-    padding-left: 90px;
-}
-
 .social-icon {
     display: inline;
-    padding: 5px;
+    padding-right: 10px;
     color: white;
 }
 
 .social-icon img{
-    width: 10%;
+    width: 35px;
     min-width: 10px;
 }
 
@@ -74,26 +70,33 @@ body {
     flex-wrap: wrap;
 }
 
-@media (max-width:420px) {
+
+@media (max-width:758px) {
     #middle-bar{
         height: 200px;
+        justify-content: center;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
     }
 }
 
 #logo{
-    flex-grow: 8;
+    width: 300px;
+    flex-grow: 4;
 }
 
 #logo img{
-    width: 28%;
-    min-width: 180px;
+    width: 200px;
 }
 
 #search {
-    width: 30%;
+    width: 40%;
     min-width: 210px;
     position: relative;
-    flex-grow: 1;
+    flex-grow: 3;
     display: flex;
 }
 
@@ -133,9 +136,10 @@ body {
 }
 
 #account-cart{
+    width: 143px;
+    flex-grow: 3;
     display: flex;
     justify-content: center;
-    flex-grow: 1;
     align-items: center;
 }
 
@@ -196,7 +200,7 @@ nav{
 
 .nav-item a:hover{
     text-decoration: underline;
-    color: lightgray;
+    color: #d4f0fc;
 }
 
 
