@@ -23,7 +23,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
-    flex-wrap: wrap;
 }
 
 #welcome-message{
@@ -31,6 +30,19 @@ body {
     color: white;
     font-style: oblique;
     font-weight: bold;
+}
+
+@media (max-width:420px) {
+    #top-bar{
+        justify-content: center;
+    }
+    #welcome-message{
+        display: none;
+    }
+}
+
+#social{
+    padding-left: 90px;
 }
 
 .social-icon {
@@ -59,6 +71,13 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:420px) {
+    #middle-bar{
+        height: 200px;
+    }
 }
 
 #logo{
@@ -156,7 +175,7 @@ nav{
     font-weight: bold
 }
 
-@media (max-width: 720px) {
+@media (max-width:420px) {
     nav {
         flex-direction: column;
         height: 120px;
