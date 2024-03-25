@@ -32,7 +32,7 @@ body {
     font-weight: bold;
 }
 
-@media (max-width:758px) {
+@media (max-width:767px) {
     #top-bar{
         justify-content: center;
     }
@@ -71,7 +71,7 @@ body {
 }
 
 
-@media (max-width:758px) {
+@media (max-width:767px) {
     #middle-bar{
         height: 200px;
         justify-content: center;
@@ -84,7 +84,7 @@ body {
 }
 
 #logo{
-    width: 300px;
+    width: 305px;
     flex-grow: 4;
 }
 
