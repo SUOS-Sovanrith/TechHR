@@ -50,12 +50,14 @@ body {
 .social-icon img{
     width: 35px;
     min-width: 10px;
+    transition: all 0.2s ease;
 }
 
 .social-icon img:hover{
     /* width: 40px; */
     border-radius: 10px;
     box-shadow: 0px 0px 10px white;
+    width: 2.5em;
 }
 
 #middle-bar{
@@ -116,6 +118,7 @@ body {
 }
 
 .searchTerm:focus{
+    box-shadow: 0px 0px 5px #02577a;
     color: #02577a;
 }
 
@@ -128,11 +131,20 @@ body {
     color: #fff;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    transition: all 0.2s ease;
     font-size: 0;
 }
 
 .searchButton:hover {
     background: #027aad;
+    width: 55px;
+}
+.searchButton img{
+    transition: all 0.1s ease;
+    width: 28px;
+}
+.searchButton img:hover {
+    width: 33px;
 }
 
 #account-cart{
@@ -154,14 +166,15 @@ body {
     margin: 5px;    
     border-radius: 50% ;
     background-color: #02577a;
+    transition: all 0.2s ease;
 }
 
 .account-cart img{
     width: 35px;
+    transition: all 0.2s ease;
 }
-
-.account-cart a:hover{
-    background-color: #027aad;
+.account-cart img:hover{
+    width: 44px;
 }
 
 nav{
@@ -195,12 +208,13 @@ nav{
     width: 100%;
     height: 100%;
     color: white;
+    transition: all 0.2s ease;
     text-decoration: none;
 }
 
 .nav-item a:hover{
     text-decoration: underline;
-    color: #d4f0fc;
+    padding-left: 10px;
 }
 
 

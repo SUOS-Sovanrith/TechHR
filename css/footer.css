@@ -39,10 +39,11 @@ ul {
     position: absolute;
     left: 40px;
     bottom: -10px;
-    background-color: #5550bb;
+    background-color: #02a9f7;
+    border-radius: 10px;
     height: 2px;
     box-sizing: border-box;
-    width: 50px;
+    width: 55px;
 }
 
 .footer-col ul li:not(:last-child) {
