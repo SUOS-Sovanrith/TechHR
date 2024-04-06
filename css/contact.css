@@ -185,12 +185,16 @@
 }
 
 .headcontact {
-  margin-top: 30px;
-  background-color: #055e7c;
-  color: #F0F1F8;
-  padding: 25px;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-
-}
+      height: 300px;
+      font-size: 2em;
+      padding: 25px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/contact.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+    }
