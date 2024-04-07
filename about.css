@@ -20,7 +20,10 @@ body {
 
 .pic {
   height: auto;
-  width: 302px;
+  width: 500px;
+  height: 500px;
+  margin-right: 150px;
+
 }
 
 .about {
