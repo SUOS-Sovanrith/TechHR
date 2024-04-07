@@ -1,33 +1,77 @@
 .product-card {
     width: 250px;
-    height: 100%;
-    background-color: fff;
+    height: 450px;
+    background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 0px 3px 8px #02577a;
+    box-shadow: 0px 2px 5px #02577a;
     margin: 10px;
-    padding: 10px;
+    padding: 25px;
 }
 
 .product-img img{
-    width: 250px;
-    transition: all 0.2s ease;
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 1444.98px) { 
+    .product-card {
+        width: 200px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 1219.98px) { 
+    .product-card {
+        width: 150px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 999.98px) { 
+    .product-card {
+        width: 250px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .product-card {
+        width: 80%;
+        height: 90%;
+    }
+}
+
+.product_badge{
+    position: absolute;
+    z-index: 999;
+    background-color: #02a9f7;
+    width: 45px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 0.5px solid #009cdf;
 }
 
 .product-name {
+    font-size: 25px;
     text-align: center;
     color: #01303f;
 }
 
 .product-description {
     width: 100%;
-    padding: 4px;
+    padding: 5px;
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .product-price {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     color: #02577a;
     margin-bottom : 15px;
@@ -39,9 +83,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     color: #02577a;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .view-detail:hover {
@@ -66,6 +111,7 @@
     font-weight: 200;
     position: relative;
     cursor: pointer;
+    box-shadow: 0px 0px 5px #02a9f7;
     transition: all .1s linear;
 }
 
@@ -73,7 +119,7 @@
     color: #fff;
     background-color: #027aad;
     transform: translateY(-3px);
-    box-shadow: 0 1px 5px #01303f;
+    box-shadow: 0 3px 5px #01303f;
 }
 
 .add-cart-btn:active {
