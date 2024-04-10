@@ -35,9 +35,16 @@
                 </button>
             </div>
             <div id="account-cart">
-                <div id="account" class="account-cart"><a href="login.html"><img src="images/icon-user.png" alt="Account"></a></div>
-                <div id="cart" class="account-cart"><a href="cart.html"><img src="images/icon-shopping-cart.png" alt="Cart"></a></div>
-            </div>
+              <div id="account" class="account-cart">
+                  <a href="#"><img src="images/icon-user.png" alt="Account"></a>
+                  <ul>
+                      <li><a href="#login_form">Login</a></li>
+                      <li><a href="#register_form">Register</a></li>
+                      <li><a href="#">Account</a></li>
+                  </ul>
+              </div>
+              <div id="cart" class="account-cart"><a href="cart.html"><img src="images/icon-shopping-cart.png" alt="Cart"></a></div>
+          </div>
         </div>
 
         <nav id="navbar">
@@ -107,6 +114,32 @@
 
 
 
+
+
+<!-- Start Login -->
+<div class="form-wrapper" id="login_form">
+  <h2 class="close_login"><a href="#">X</a></h2>
+  <h2>Log In</h2>
+  <form action="#">
+      <div class="form-control">
+          <input type="text" required>
+          <label>Email or phone number</label>
+      </div>
+      <div class="form-control">
+          <input type="password" required>
+          <label>Password</label>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="form-help"> 
+          <div class="remember-me">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
+          </div>
+      </div>
+  </form>
+  <p>New to TechHR? <a href="#">Sign up now</a></p>
+</div>
+<!-- End Login-->
 
 
     

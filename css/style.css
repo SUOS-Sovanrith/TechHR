@@ -181,6 +181,40 @@ body {
     width: 44px;
 }
 
+#account{
+    display: flex;
+    justify-content: center;
+}
+
+#account ul{
+    margin-top: 60px;
+    position: absolute;
+    width: 100px;
+    background-color: #02577a;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px white;
+    display: none;
+    z-index: 9999;
+}
+#account ul a{
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    margin: 0;
+    border-radius: 10px;
+}
+#account ul a:hover{
+    background-color: #02577a;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#account:hover ul{
+    display: block;
+}
+
+
+
 nav{
     box-sizing: border-box;
     padding-left: 15px;
@@ -381,3 +415,163 @@ nav{
         box-shadow: 0px 0px 20px #02a9f7;
     }
 /* End Newsletter */
+
+
+/* Start Login */
+
+.form-wrapper {
+    visibility: hidden;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border-radius: 15px;
+    border: 4px solid #02577a;
+    box-shadow: 0px 0px 5px #02577a;
+    padding: 40px;
+    width: 450px;  
+    background: white;
+    transition: opacity 500ms;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.form-wrapper:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.close_login{
+float: right;
+}
+
+.close_login a{
+    color: #02577a;
+}
+
+.form-wrapper h2 {
+    color: #02577a;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-wrapper form {
+    margin: 25px 0 65px;
+}
+
+.form-wrapper form .form-control {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-wrapper .form-control input {
+    height: 90%;
+    width: 90%;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #02577a;
+    font-size: 1rem;
+    padding: 0 20px;
+    border: 1px solid #02577a;
+}
+
+.form-wrapper .form-control input:is(:focus, :valid) {
+    background: white;
+    padding: 16px 20px 0;
+    box-shadow: 0 0 5px #02577a;
+}
+
+.form-wrapper .form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #02577a;
+    transition: all 0.1s ease;
+}
+
+.form-wrapper .form-control input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+.form-wrapper form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #02577a;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 15px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    box-shadow: 0px 0px 5px #02a9f7;
+    transition: all 0.1s linear;
+}
+
+.form-wrapper form button:hover {
+    background-color: #027aad;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px #02a9f7;
+}
+.form-wrapper form button:active{
+    transform: translateY(0px);
+    box-shadow: 0 0 0 #02577a;
+}
+
+.form-wrapper a {
+    text-decoration: none;
+}
+
+.form-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.form-wrapper :where(label, p, small, a) {
+    color: #02577a;
+}
+
+.form-wrapper form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-wrapper form .remember-me {
+    display: flex;
+}
+
+.form-wrapper form .remember-me input {
+    margin-right: 5px;
+    accent-color: #0579fd;
+}
+
+.form-wrapper form .form-help :where(label, a) {
+    font-size: 0.9rem;
+}
+
+.form-wrapper p a {
+    color: #02577a;
+    font-weight: bold;
+
+}
+
+@media (max-width: 740px) {
+
+    .form-wrapper {
+        width: 80%;
+        top: 43%;
+    }
+
+    .form-wrapper form {
+        margin: 25px 0 40px;
+    }
+}
+
+/* End Login */
