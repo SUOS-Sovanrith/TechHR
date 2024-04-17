@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/product_card.css">
+    <link rel="stylesheet" href="css/cart.css">
     <title>Cart</title>
 </head>
 <body>
@@ -57,11 +57,48 @@
 
     <!-- Start/ Main Section -->
 
+    <div id="cart_container">
+        <div id="shopping_cart">
+            <table>
+                <caption>Shopping Cart</caption>
+                <tbody>
+                    <tr>
+                        <td><img src="products/ASUS P305 TUF Gaming M3.jpg" alt="product_image" width="200" height="200"></td>
+                        <td>ASUS P305 TUF Gaming M3</td>
+                        <td>
+                            <input type="button" value="-">
+                            <input type="number" value="69"> 
+                            <input type="button" value="+"></td>
+                        <td>
+                            $69.69
+                            <br>
+                            <a href="#">Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="products/ASUS ROG FUSION II 500.jpg" alt="product_image" width="200" height="200"></td>
+                        <td>ASUS ROG FUSION II 500</td>
+                        <td>
+                            <input type="button" value="-">
+                            <input type="number" value="69"> 
+                            <input type="button" value="+"></td>
+                        <td>
+                            $69.69
+                            <br>
+                            <a href="#">Remove</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Total: $6969.69</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
     <!-- End/ Main Section -->
-
-
-
-
 
 <!-- Start Login -->
 <div class="form-wrapper" id="login_form">
@@ -88,6 +125,32 @@
 </div>
 <!-- End Login-->
 
+<!-- Start Register -->
+<div class="form-wrapper" id="register_form">
+    <h2 class="close_login"><a href="#">X</a></h2>
+    <h2>Register</h2>
+    <form action="#">
+        <div class="form-control">
+            <input type="text" required>
+            <label>Username</label>
+        </div>
+        <div class="form-control">
+            <input type="text" required>
+            <label>Email or phone number</label>
+        </div>
+        <div class="form-control">
+            <input type="password" required>
+            <label>Password</label>
+        </div>
+        <div class="form-control">
+            <input type="password" required>
+            <label>Confirm Password</label>
+        </div>
+        <button type="submit">Log In</button>
+    </form>
+    <p>Already have an account? <a href="#login_form">Login now!</a></p>
+</div>
+<!-- End Register-->
 
     
     <!-- Start/ Footer Section -->

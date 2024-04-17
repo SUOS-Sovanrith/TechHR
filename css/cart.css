@@ -1,0 +1,12 @@
+#cart_container{
+    width: 100%;
+    padding: 20px;
+}
+
+#shopping_cart{
+    width: 80%;
+    margin: auto;
+    border: 2px solid #02577a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #02577a;
+}
