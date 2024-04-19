@@ -1,62 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/cart.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <title>Cart</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- Start/ Header Section -->
     <header>
-        <div id="top-bar">
-            <div id="welcome-message">Welcome, Customer!</div>
-            <div id="social">
-                <div class="social-icon"><a href="tel:+85589449331" ><img src="images/icon-phone.png" alt="Facebook"></a></div>
-                <div class="social-icon"><a href="https://facebook.com/" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a></div>
-                <div class="social-icon"><a href="https://twitter.com/" target="_blank"><img src="images/icon-twitterx.png" alt="Twitter"></a></div>
-                <div class="social-icon"><a href="https://instagram.com/" target="_blank"><img src="images/icon-instagram-.png" alt="Instagram"></a></div>
-                <div class="social-icon"><a href="https://kh.linkedin.com/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></div>
-            </div>
+      <div id="top-bar">
+        <div id="welcome-message">Welcome, Customer!</div>
+        <div id="social">
+          <div class="social-icon">
+            <a href="tel:+85589449331"
+              ><img src="images/icon-phone.png" alt="Facebook"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://facebook.com/" target="_blank"
+              ><img src="images/icon-facebook.png" alt="Facebook"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://twitter.com/" target="_blank"
+              ><img src="images/icon-twitterx.png" alt="Twitter"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://instagram.com/" target="_blank"
+              ><img src="images/icon-instagram-.png" alt="Instagram"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://kh.linkedin.com/" target="_blank"
+              ><img src="images/icon-linkedin.png" alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="middle-bar">
+        <div id="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
         </div>
 
-        <div id="middle-bar">
-            <div id="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
-            
-            
-            <div id="search">
-                <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                <button type="submit" class="searchButton">
-                    <img src="images/icon-search.png" width="23">
-                </button>
-            </div>
-            <div id="account-cart">
-                <div id="account" class="account-cart">
-                    <a href="#"><img src="images/icon-user.png" alt="Account"></a>
-                    <ul>
-                        <li><a href="#login_form">Login</a></li>
-                        <li><a href="#register_form">Register</a></li>
-                        <li><a href="#">Account</a></li>
-                    </ul>
-                </div>
-                <div id="cart" class="account-cart"><a href="cart.html"><img src="images/icon-shopping-cart.png" alt="Cart"></a></div>
-            </div>
+        <div id="search">
+          <input
+            type="text"
+            class="searchTerm"
+            placeholder="What are you looking for?"
+          />
+          <button type="submit" class="searchButton">
+            <img src="images/icon-search.png" width="23" />
+          </button>
         </div>
+        <div id="account-cart">
+          <div id="account" class="account-cart">
+            <a href="#"><img src="images/icon-user.png" alt="Account" /></a>
+            <ul>
+              <li><a href="#login_form">Login</a></li>
+              <li><a href="#register_form">Register</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </div>
+          <div id="cart" class="account-cart">
+            <a href="cart.html"
+              ><img src="images/icon-shopping-cart.png" alt="Cart"
+            /></a>
+          </div>
+        </div>
+      </div>
 
-        <nav id="navbar">
-            <div class="nav-item" id="home-nav"><a href="index.html">Home</a></div>
-            <div class="nav-item" id="shop-nav"><a href="shop.html">Shop</a></div>
-            <div class="nav-item" id="about-nav"><a href="about.html">About</a></div>
-            <div class="nav-item" id="contact-nav"><a href="contact.html">Contact</a></div>
-        </nav>
+      <nav id="navbar">
+        <div class="nav-item" id="home-nav"><a href="index.html">Home</a></div>
+        <div class="nav-item" id="shop-nav"><a href="shop.html">Shop</a></div>
+        <div class="nav-item" id="about-nav">
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-item" id="contact-nav">
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
     </header>
     <!-- End/ Header Section -->
 
     <!-- Start/ Main Section -->
-
+    <!-- 
     <div id="cart_container">
         <div id="shopping_cart">
             <table>
@@ -96,115 +128,264 @@
                 </tfoot>
             </table>
         </div>
-    </div>
+    </div> -->
+
+    <main>
+
+      <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">Shopping Cart</div>
+
+        <!-- Product -->
+        <div class="item">
+            
+            <div class="image">
+                <img src="products/ROG Zephyrus Duo 16.png" alt="product_image" />
+            </div>
+            
+            <div class="product_name">
+                ROG Zephyrus Duo 16
+            </div>
+            
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    +
+                </button>
+                <input type="text" name="name" value="1" />
+                <button class="minus-btn" type="button" name="button">
+                    -
+                </button>
+            </div>
+            
+            <div class="    price">$549</div>
+
+            <button class="delete-btn buttons">
+                X
+            </button>
+        </div>
+        <!-- Product -->
+        <div class="item">
+            
+            <div class="image">
+                <img src="products/ROG Zephyrus Duo 16.png" alt="product_image" />
+            </div>
+            
+            <div class="product_name">
+                ROG Zephyrus Duo 16
+            </div>
+            
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    +
+                </button>
+                <input type="text" name="name" value="1" />
+                <button class="minus-btn" type="button" name="button">
+                    -
+                </button>
+            </div>
+            
+            <div class="    price">$549</div>
+
+            <button class="delete-btn buttons">
+                X
+            </button>
+        </div>
+        <!-- Product -->
+        <div class="item">
+            
+            <div class="image">
+                <img src="products/ROG Zephyrus Duo 16.png" alt="product_image" />
+            </div>
+            
+            <div class="product_name">
+                ROG Zephyrus Duo 16
+            </div>
+            
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    +
+                </button>
+                <input type="text" name="name" value="1" />
+                <button class="minus-btn" type="button" name="button">
+                    -
+                </button>
+            </div>
+            
+            <div class="    price">$549</div>
+
+            <button class="delete-btn buttons">
+                X
+            </button>
+        </div>
+        <!-- Product -->
+        <div class="item">
+            
+            <div class="image">
+                <img src="products/ROG Zephyrus Duo 16.png" alt="product_image" />
+            </div>
+            
+            <div class="product_name">
+                ROG Zephyrus Duo 16
+            </div>
+            
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    +
+                </button>
+                <input type="text" name="name" value="1" />
+                <button class="minus-btn" type="button" name="button">
+                    -
+                </button>
+            </div>
+            
+            <div class="price">$549</div>
+
+            <button class="delete-btn buttons">
+                X
+            </button>
+        </div>
+
+        <!-- Cart Footer -->
+        <div class="cart-footer item">
+            <a href="shop.html" class="main_button">Continue Shopping</a>
+            
+            <div class="checkout">
+                <div class="total-price">
+                    Total: &emsp; <span>$6969</span> <br><br>
+                </div>
+                <a href="#" class="main_button">Checkout</a>
+            </div>
+        </div>
+
+
+      </div>
+
+    </main>
 
     <!-- End/ Main Section -->
 
-<!-- Start Login -->
-<div class="form-wrapper" id="login_form">
-    <h2 class="close_login"><a href="#">X</a></h2>
-    <h2>Log In</h2>
-    <form action="#">
+    <!-- Start Login -->
+    <div class="form-wrapper" id="login_form">
+      <h2 class="close_login"><a href="#">X</a></h2>
+      <h2>Log In</h2>
+      <form action="#">
         <div class="form-control">
-            <input type="text" required>
-            <label>Email or phone number</label>
+          <input type="text" required />
+          <label>Email or phone number</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
-            <label>Password</label>
+          <input type="password" required />
+          <label>Password</label>
         </div>
         <button type="submit">Log In</button>
-        <div class="form-help"> 
-            <div class="remember-me">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Remember me</label>
-            </div>
+        <div class="form-help">
+          <div class="remember-me">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </div>
         </div>
-    </form>
-    <p>New to TechHR? <a href="#">Sign up now</a></p>
-</div>
-<!-- End Login-->
+      </form>
+      <p>New to TechHR? <a href="#">Sign up now</a></p>
+    </div>
+    <!-- End Login-->
 
-<!-- Start Register -->
-<div class="form-wrapper" id="register_form">
-    <h2 class="close_login"><a href="#">X</a></h2>
-    <h2>Register</h2>
-    <form action="#">
+    <!-- Start Register -->
+    <div class="form-wrapper" id="register_form">
+      <h2 class="close_login"><a href="#">X</a></h2>
+      <h2>Register</h2>
+      <form action="#">
         <div class="form-control">
-            <input type="text" required>
-            <label>Username</label>
+          <input type="text" required />
+          <label>Username</label>
         </div>
         <div class="form-control">
-            <input type="text" required>
-            <label>Email or phone number</label>
+          <input type="text" required />
+          <label>Email or phone number</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
-            <label>Password</label>
+          <input type="password" required />
+          <label>Password</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
-            <label>Confirm Password</label>
+          <input type="password" required />
+          <label>Confirm Password</label>
         </div>
         <button type="submit">Log In</button>
-    </form>
-    <p>Already have an account? <a href="#login_form">Login now!</a></p>
-</div>
-<!-- End Register-->
+      </form>
+      <p>Already have an account? <a href="#login_form">Login now!</a></p>
+    </div>
+    <!-- End Register-->
 
-    
     <!-- Start/ Footer Section -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="#">Our services</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Our Partners</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
-                        <li><a href="mailto:2024040suos@aupp.edu.kh">Email us</a></li>
-                        <li><a href="#">Payment options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Online shop</h4>
-                    <ul>
-                        <li><a href="shop.html">Shop all</a></li>
-                        <li><a href="shop.html">Laptop</a></li>
-                        <li><a href="shop.html">PC</a></li>
-                        <li><a href="shop.html">Accesories</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <div class="social-icon"><a href="tel:+85589449331" ><img src="images/icon-phone.png" alt="Facebook"></a></div>
-                        <div class="social-icon"><a href="https://facebook.com/" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a></div>
-                        <div class="social-icon"><a href="https://twitter.com/" target="_blank"><img src="images/icon-twitterx.png" alt="Twitter"></a></div>
-                        <div class="social-icon"><a href="https://instagram.com/" target="_blank"><img src="images/icon-instagram-.png" alt="Instagram"></a></div>
-                        <div class="social-icon"><a href="https://kh.linkedin.com/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></div>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="#">Our services</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Our Partners</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="mailto:2024040suos@aupp.edu.kh">Email us</a></li>
+              <li><a href="#">Payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online shop</h4>
+            <ul>
+              <li><a href="shop.html">Shop all</a></li>
+              <li><a href="shop.html">Laptop</a></li>
+              <li><a href="shop.html">PC</a></li>
+              <li><a href="shop.html">Accesories</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <div class="social-icon">
+                <a href="tel:+85589449331"
+                  ><img src="images/icon-phone.png" alt="Facebook"
+                /></a>
+              </div>
+              <div class="social-icon">
+                <a href="https://facebook.com/" target="_blank"
+                  ><img src="images/icon-facebook.png" alt="Facebook"
+                /></a>
+              </div>
+              <div class="social-icon">
+                <a href="https://twitter.com/" target="_blank"
+                  ><img src="images/icon-twitterx.png" alt="Twitter"
+                /></a>
+              </div>
+              <div class="social-icon">
+                <a href="https://instagram.com/" target="_blank"
+                  ><img src="images/icon-instagram-.png" alt="Instagram"
+                /></a>
+              </div>
+              <div class="social-icon">
+                <a href="https://kh.linkedin.com/" target="_blank"
+                  ><img src="images/icon-linkedin.png" alt="LinkedIn"
+                /></a>
+              </div>
             </div>
+          </div>
         </div>
-        <br>
-        <br>
-        <div class="copyright">
-            <p>&copy;2024 TechHR | All Rights Reserved</p>
-        </div>
+      </div>
+      <br />
+      <br />
+      <div class="copyright">
+        <p>&copy;2024 TechHR | All Rights Reserved</p>
+      </div>
     </footer>
 
     <!-- End/ Footer Section -->
-
-
-</body>
+  </body>
 </html>
