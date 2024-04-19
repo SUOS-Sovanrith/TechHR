@@ -53,6 +53,16 @@ main * {
   border-radius: 6px;
   border: none;
   cursor: pointer;
+  transition: all 0.1s linear;
+}
+.delete-btn:hover {
+  background-color: red;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 5px #02a9f7;
+}
+.delete-btn:active {
+  transform: translateY(0px);
+  background-color: crimson;
 }
 
 /* Product Image */
@@ -101,6 +111,17 @@ main * {
   border-radius: 6px;
   border: none;
   cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.plus-btn:hover, .minus-btn:hover {
+  background-color: #027aad;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 5px #02a9f7;
+}
+.plus-btn:active, .minus-btn:active {
+  transform: translateY(0px);
+  background-color: #02577a;
 }
 
 
