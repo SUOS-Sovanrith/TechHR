@@ -402,7 +402,7 @@ nav{
     }
 
     #section_newsletter input{
-        width: 40%;
+        min-width: 50vw;
         height: 15px;
         font-size: 1em;
         padding: 15px;
