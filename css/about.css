@@ -1,0 +1,19 @@
+.headabout {
+    height: 400px;
+    font-size: 2em;
+    padding: 25px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/aboutus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.headtext {
+    text-align: center;
+
+}
