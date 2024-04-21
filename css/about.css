@@ -1,23 +1,18 @@
 .headabout {
-    height: 400px;
+    height: 500px;
     font-size: 2em;
     padding: 25px;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/aboutus.png);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/aboutus.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
 
-.headtext {
-    text-align: center;
-    font-size: 1.7em;
-
-}
 main {
     display: flex;
     justify-content: space-between;
