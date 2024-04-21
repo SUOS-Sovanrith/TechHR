@@ -1,0 +1,56 @@
+.headabout {
+    height: 400px;
+    font-size: 2em;
+    padding: 25px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/aboutus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.headtext {
+    text-align: center;
+    font-size: 1.7em;
+
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 1;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.right-column {
+    flex: 1;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.left-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+}
+
+.right-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
