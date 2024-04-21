@@ -15,6 +15,7 @@
 
 .headtext {
     text-align: center;
+    font-size: 1.7em;
 
 }
 main {
@@ -30,6 +31,7 @@ main {
     background-color: white;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
 }
 
 .right-column {
@@ -39,6 +41,7 @@ main {
     background-color: white;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 }
 
 .left-column h2 {
