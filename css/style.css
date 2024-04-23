@@ -10,6 +10,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Start/ Header Section */

@@ -81,8 +81,6 @@ main * {
   width: 140px; 
 }
 .quantity input {
-  -webkit-appearance: none;
-  appearance: none;
   border: none;
   text-align: center;
   width: 32px;
@@ -112,11 +110,6 @@ main * {
   background-color: #02577a;
 }
 
-
-button:focus,
-input:focus {
-  outline: 0;
-}
 
 /* Total Price */
 .price {
