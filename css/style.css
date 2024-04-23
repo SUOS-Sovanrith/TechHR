@@ -425,13 +425,14 @@ nav{
     left: 50%;
     top: 50%;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px #02577a;
+    /* box-shadow: 0px 0px 5px #02577a; */
+    box-shadow: 0px 0px 999px black;
     padding: 30px;
     width: 450px;  
     background: white;
     transition: opacity 500ms;
     transform: translate(-50%, -50%);
-    z-index: 9999;
+    z-index: 5;
 }
 
 .form-wrapper:target{

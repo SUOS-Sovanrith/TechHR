@@ -176,33 +176,6 @@
                 X
             </button>
         </div>
-        <!-- Product -->
-        <div class="item">
-            
-            <div class="image">
-                <img src="products/ASUS ROG Strix G16 G814JIR (Intel 14th Gen,2024).png" alt="product_image" />
-            </div>
-            
-            <div class="product_name">
-                ROG Zephyrus Duo 16
-            </div>
-            
-            <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                    +
-                </button>
-                <input type="text" name="name" value="1" />
-                <button class="minus-btn" type="button" name="button">
-                    -
-                </button>
-            </div>
-            
-            <div class="price">$549</div>
-
-            <button class="delete-btn buttons">
-                X
-            </button>
-        </div>
 
         <!-- Cart Footer -->
         <div class="cart-footer item">
@@ -229,22 +202,22 @@
                   <div class="half_side">
                     <h3>Billing Address</h3>
                     <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                    <input type="text" id="fname" name="fname" placeholder="John Pork" required>
                     <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <input type="text" id="email" name="email" placeholder="johnpork@example.com" required>
                     <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    <input type="text" id="adr" name="address" placeholder="420 NR. 69 Street" required>
                     <label for="city"><i class="fa fa-institution"></i> City</label>
-                    <input type="text" id="city" name="city" placeholder="New York">
+                    <input type="text" id="city" name="city" placeholder="New York" required>
         
                     <div class="row">
                       <div class="half_side">
                         <label for="state">State</label>
-                        <input type="text" id="state" name="state" placeholder="NY">
+                        <input type="text" id="state" name="state" placeholder="PP" required>
                       </div>
                       <div class="half_side">
                         <label for="zip">Zip</label>
-                        <input type="text" id="zip" name="zip" placeholder="10001">
+                        <input type="text" id="zip" name="zip" placeholder="12345" maxlength="5" required>
                       </div>
                     </div>
                   </div>
@@ -259,19 +232,19 @@
                       <i class="fa fa-cc-discover" style="color:orange;"></i>
                     </div>
                     <label for="cname">Name on Card</label>
-                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <input type="text" id="cname" name="cardname" placeholder="John Pork" required>
                     <label for="ccnum">Credit card number</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
                     <label for="expmonth">Exp Month</label>
-                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
                     <div class="row">
                       <div class="half_side">
                         <label for="expyear">Exp Year</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        <input type="text" id="expyear" name="expyear" placeholder="2018" required>
                       </div>
                       <div class="half_side">
                         <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                        <input type="text" id="cvv" name="cvv" placeholder="352" required>
                       </div>
                     </div>
                   </div>
@@ -280,7 +253,10 @@
                 <label>
                   <input type="checkbox" checked="checked" name="sameaddress"> Shipping address same as billing
                 </label>
-                <input class="main_button btn" type="submit" value="Continue to Checkout">
+                <div class="order_button">
+                  <input class="main_button btn" type="submit" value="Order">
+                </div>
+                
               </form>
             </div>
         </div>
@@ -292,30 +268,30 @@
 
     <!-- End/ Main Section -->
 
-    <!-- Start Login -->
-    <div class="form-wrapper" id="login_form">
-      <h2 class="close_login"><a href="#">X</a></h2>
-      <h2>Log In</h2>
-      <form action="#">
-        <div class="form-control">
-          <input type="text" required />
+<!-- Start Login -->
+<div class="form-wrapper" id="login_form">
+  <h2 class="close_login"><a href="#">X</a></h2>
+  <h2>Log In</h2>
+  <form action="#">
+      <div class="form-control">
+          <input type="text" required>
           <label>Email or phone number</label>
-        </div>
-        <div class="form-control">
-          <input type="password" required />
+      </div>
+      <div class="form-control">
+          <input type="password" required>
           <label>Password</label>
-        </div>
-        <button type="submit">Log In</button>
-        <div class="form-help">
+      </div>
+      <button type="submit">Log In</button>
+      <div class="form-help"> 
           <div class="remember-me">
-            <input type="checkbox" id="remember-me" />
-            <label for="remember-me">Remember me</label>
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
           </div>
-        </div>
-      </form>
-      <p>New to TechHR? <a href="#">Sign up now</a></p>
-    </div>
-    <!-- End Login-->
+      </div>
+  </form>
+  <p>Doesn't have an account? <a href="#register_form">Register now!</a></p>
+</div>
+<!-- End Login-->
 
     <!-- Start Register -->
     <div class="form-wrapper" id="register_form">
