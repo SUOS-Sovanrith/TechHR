@@ -68,7 +68,6 @@
 
 .content .left-side .details .text-one a:hover,
 .content .left-side .details .text-two a:hover {
-  font-size: 14px;
   font-weight: bold;
   text-decoration: underline;
   color: #02577a;
@@ -183,6 +182,11 @@
     width: 100%;
     margin-left: 0;
   }
+
+  .content .left-side .details .text-one a:hover,
+  .content .left-side .details .text-two a:hover {
+    padding-left: 0px;
+}
 }
 
 .headcontact {

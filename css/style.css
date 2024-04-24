@@ -408,6 +408,7 @@ nav{
         font-size: 1em;
         padding: 15px;
         margin-top: 10px;
+        margin-bottom: 10px;
         border: none;
         outline: none;
         border-radius: 6px;
@@ -415,6 +416,7 @@ nav{
     #section_newsletter input:focus{
         box-shadow: 0px 0px 20px #02a9f7;
     }
+
 /* End Newsletter */
 
 
@@ -423,6 +425,7 @@ nav{
 .form-wrapper {
     visibility: hidden;
     position: fixed;
+    min-height: 80vh;
     left: 50%;
     top: 50%;
     border-radius: 15px;
@@ -433,7 +436,7 @@ nav{
     background: white;
     transition: opacity 500ms;
     transform: translate(-50%, -50%);
-    z-index: 5;
+    z-index: 999;
 }
 
 .form-wrapper:target{
@@ -572,7 +575,7 @@ nav{
 
     .form-wrapper {
         width: 80%;
-        top: 43%;
+        top: 50%;
     }
 
     .form-wrapper form {
