@@ -333,16 +333,18 @@ nav{
 }
 
 .section_heading_laptop{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/laptop_bg.jpg);
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/laptop_bg_2.jpg);
+    background-position-y: 75%;
+    background-position-x: 100%;
 }
 .section_heading_desktop{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/desktop_bg.webp);
-    background-position-y: 10%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/desktop_bg_2.jpg);
+    background-position-y: 20%;
     background-position-x: 50%;
 }
 .section_heading_accessory{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/laptop-accessories.jpg);
-    background-position-y: 70%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/lap-accessories_2.jpg);
+    background-position-y: 40%;
     background-position-x: 50%;
 }
 .section_heading h1{
@@ -389,7 +391,7 @@ nav{
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
-        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/newsletter_bg.jpg);
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/newsletter.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -568,7 +570,7 @@ nav{
 .form-wrapper p a {
     color: #02577a;
     font-weight: bold;
-
+    
 }
 
 @media (max-width: 740px) {
