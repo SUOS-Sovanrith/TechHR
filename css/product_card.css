@@ -77,13 +77,15 @@
 }
 
 .product-name {
-    font-size: 25px;
+    font-size: 20px;
+    height: 40px;
     text-align: center;
     color: #01303f;
 }
 
 .product-description {
     width: 100%;
+    height: 24px;
     padding: 5px;
     font-size: 12px;
     font-weight: 500;

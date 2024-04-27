@@ -235,7 +235,8 @@ main * {
 }
 
 .product-name {
-    font-size: 25px;
+    height: 40px;
+    font-size: 20px;
     text-align: center;
     color: #01303f;
 }
@@ -243,6 +244,7 @@ main * {
 .product-description {
     width: 100%;
     padding: 5px;
+    height: 24px;
     font-size: 12px;
     font-weight: 500;
 }
