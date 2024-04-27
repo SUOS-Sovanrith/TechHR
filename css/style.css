@@ -74,7 +74,7 @@ body {
 }
 
 
-@media (max-width:780px) {
+@media (max-width:790px) {
     #middle-bar{
         height: 200px;
         justify-content: center;
