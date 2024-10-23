@@ -126,7 +126,7 @@
   box-shadow: 0px 0px 5px #02577a;
 }
 
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -138,7 +138,7 @@
   transition: all 0.2s ease;
 }
 
-.button input[type="button"]:hover {
+.button input[type="submit"]:hover {
   background: #027aad;
   transform: translateY(-3px);
   box-shadow: 0 1px 5px #01303f;
