@@ -36,6 +36,7 @@ main * {
 
 #col_2{ 
     padding-left: 10px;
+    width: 80%;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -89,6 +90,7 @@ main * {
     margin: 0 auto;
     padding: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 15px ;
     box-shadow: 0px 2px 5px #02577a;
 }
@@ -115,6 +117,7 @@ main * {
     /* width: 250px; */
     width: 23%;
     height: auto;
+    max-height: fit-content;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 2px 5px #02577a;
@@ -305,4 +308,38 @@ main * {
 .add-cart-btn:active {
     transform: translateY(0px);
     box-shadow: 0 0 0 #01303f;
+}
+
+#filter-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.clear-filters{
+    width: 90%;
+    height: 40px;
+    padding: 8px;
+    margin-top: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    background-color: crimson;
+    border-radius: 10px;
+    border: none;
+    border-style: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px lightcoral;
+    transition: all 0.1s linear;
+}
+.clear-filters:hover{
+    background-color: red;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px lightcoral;
+}
+.clear-filters:active{
+    transform: translateY(0px);
+    box-shadow: 0 0 0 crimson;
 }
