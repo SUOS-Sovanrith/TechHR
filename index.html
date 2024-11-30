@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/product_card.css">
+    <link rel="stylesheet" href="css/focus_error.css">
     <title>Tech HR </title>
 </head>
 <body>
@@ -417,11 +418,11 @@
     <h2>Log In</h2>
     <form action="#">
         <div class="form-control">
-            <input type="text" required>
-            <label>Email or phone number</label>
+            <input type="text" id="login-email" required>
+            <label>Email</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
+            <input type="password" id="login-password" required>
             <label>Password</label>
         </div>
         <button type="submit">Log In</button>
@@ -442,22 +443,22 @@
     <h2>Register</h2>
     <form action="#">
         <div class="form-control">
-            <input type="text" required>
+            <input type="text" id="register-username" required>
             <label>Username</label>
         </div>
         <div class="form-control">
-            <input type="text" required>
-            <label>Email or phone number</label>
+            <input type="text" id="register-email" required>
+            <label>Email</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
+            <input type="password" id="register-password" required>
             <label>Password</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
+            <input type="password" id="confirm-password" required>
             <label>Confirm Password</label>
         </div>
-        <button type="submit">Log In</button>
+        <button type="submit">Sign Up</button>
     </form>
     <p>Already have an account? <a href="#login_form">Login now!</a></p>
 </div>
@@ -531,7 +532,7 @@
     </footer>
 
     <!-- End/ Footer Section -->
-
+    <script src="javascript/login_register.js"></script>
 
 </body>
 </html>
