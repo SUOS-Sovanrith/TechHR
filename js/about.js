@@ -1,1 +1,1 @@
-console.log("Hello web 2");
+console.log("Hello hi web 2");
