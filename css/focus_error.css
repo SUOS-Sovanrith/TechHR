@@ -1,0 +1,14 @@
+.form-control {
+    position: relative;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
