@@ -29,6 +29,7 @@ $(document).ready(function () {
 
         saveCart();
         renderCart();
+        showAlert('success', 'Product added to cart successfully!');
     });
 
     // Add to Cart for view.html
@@ -52,6 +53,7 @@ $(document).ready(function () {
 
         saveCart();
         renderCart();
+        showAlert('success', 'Product added to cart successfully!');
     });
 
     // Render Cart
@@ -103,23 +105,41 @@ $(document).ready(function () {
     // Delete Item
     $(document).on('click', '.delete-btn', function () {
         const itemId = $(this).closest('.item').data('id');
-        cart = cart.filter((item) => item.id !== itemId);
-
-        saveCart();
-        renderCart();
+        showConfirmation("Are you sure you want to delete this item from the cart?").then(function (confirmed) {
+            if (confirmed) {
+                // Get the item ID to be deleted
+                
+                // Remove the item from the cart
+                cart = cart.filter((item) => item.id !== itemId);
+                
+                // Save the updated cart and re-render it
+                saveCart();
+                renderCart();
+            }
+        }).catch(function (error) {
+            console.error("Error in confirmation:", error);
+        });
     });
 
     // Clear Cart
     $('.clear-cart-btn').on('click', function () {
-        cart = [];
-        saveCart();
-        renderCart();
+        showConfirmation("Are you sure you want to delete this item from the cart?").then(function (confirmed) {
+            if (confirmed) {
+                cart = [];
+                saveCart();
+                renderCart();
+            }
+        }).catch(function (error) {
+            console.error("Error in confirmation:", error);
+        });
     });
 
     // check cart for checkout
-    if (cart.length === 0) {
-        $('#checkout-btn').on('click', function (e) {
+    $('#checkout-btn').on('click', function (e) {
+        if (cart.length === 0) {
             e.preventDefault();
-        });
-    }
+            showAlert('warning', 'Your cart is empty.');
+        }
+    });
+
 });
