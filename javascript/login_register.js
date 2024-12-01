@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Validate email (only for Login and Register)
         if (input.parentElement.querySelector('label').innerText === 'Email') {
             if (!emailRegex.test(value)) {
-                showError(input, 'Enter a valid email address.');
+                showError(input, 'Enter a valid email address. Eg: abcd@gmail.com');
                 return false;
             }
         }
