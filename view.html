@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/focus_error.css">
     <link rel="stylesheet" href="css/product_card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>Tech HR </title>
 </head>
 
@@ -155,13 +156,14 @@
                     <textarea name="review_input" id="review_input" rows="5" cols="40" required></textarea>
                     <br>
                     <label for="rating_input"><img src="images/star.png" alt="star" width="16"> Your Rating </label><br>
-                    <select name="rating_input" id="rating_input">
-                        <option value="1">1 Star</option>
-                        <option value="2">2 Stars</option>
-                        <option value="3">3 Stars</option>
-                        <option value="4">4 Stars</option>
-                        <option value="5">5 Stars</option>
-                    </select>
+                    <div class="product-rating">
+                        <!-- Star rating system -->
+                        <span id="star-1" class="star" onclick="rateProduct(1)">&#9733;</span>
+                        <span id="star-2" class="star" onclick="rateProduct(2)">&#9733;</span>
+                        <span id="star-3" class="star" onclick="rateProduct(3)">&#9733;</span>
+                        <span id="star-4" class="star" onclick="rateProduct(4)">&#9733;</span>
+                        <span id="star-5" class="star" onclick="rateProduct(5)">&#9733;</span>
+                    </div>
                     <br>
                     <button type="submit" class="add-btn">Submit Review</button>
                 </form>
@@ -174,56 +176,56 @@
 
 
     <!-- Start Login -->
-<div class="form-wrapper" id="login_form">
-    <h2 class="close_login"><a href="#">X</a></h2>
-    <h2>Log In</h2>
-    <form action="#">
-        <div class="form-control">
-            <input type="text" id="login-email" required>
-            <label>Email</label>
-        </div>
-        <div class="form-control">
-            <input type="password" id="login-password" required>
-            <label>Password</label>
-        </div>
-        <button type="submit">Log In</button>
-        <div class="form-help"> 
-            <div class="remember-me">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Remember me</label>
+    <div class="form-wrapper" id="login_form">
+        <h2 class="close_login"><a href="#">X</a></h2>
+        <h2>Log In</h2>
+        <form action="#">
+            <div class="form-control">
+                <input type="text" id="login-email" required>
+                <label>Email</label>
             </div>
-        </div>
-    </form>
-    <p>Doesn't have an account? <a href="#register_form">Register now!</a></p>
-</div>
-<!-- End Login-->
+            <div class="form-control">
+                <input type="password" id="login-password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Log In</button>
+            <div class="form-help">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+            </div>
+        </form>
+        <p>Doesn't have an account? <a href="#register_form">Register now!</a></p>
+    </div>
+    <!-- End Login-->
 
-<!-- Start Register -->
-<div class="form-wrapper" id="register_form">
-    <h2 class="close_login"><a href="#">X</a></h2>
-    <h2>Register</h2>
-    <form action="#">
-        <div class="form-control">
-            <input type="text" id="register-username" required>
-            <label>Username</label>
-        </div>
-        <div class="form-control">
-            <input type="text" id="register-email" required>
-            <label>Email</label>
-        </div>
-        <div class="form-control">
-            <input type="password" id="register-password" required>
-            <label>Password</label>
-        </div>
-        <div class="form-control">
-            <input type="password" id="confirm-password" required>
-            <label>Confirm Password</label>
-        </div>
-        <button type="submit">Sign Up</button>
-    </form>
-    <p>Already have an account? <a href="#login_form">Login now!</a></p>
-</div>
-<!-- End Register-->
+    <!-- Start Register -->
+    <div class="form-wrapper" id="register_form">
+        <h2 class="close_login"><a href="#">X</a></h2>
+        <h2>Register</h2>
+        <form action="#">
+            <div class="form-control">
+                <input type="text" id="register-username" required>
+                <label>Username</label>
+            </div>
+            <div class="form-control">
+                <input type="text" id="register-email" required>
+                <label>Email</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="register-password" required>
+                <label>Password</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="confirm-password" required>
+                <label>Confirm Password</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#login_form">Login now!</a></p>
+    </div>
+    <!-- End Register-->
 
     <!-- Start/ Footer Section -->
     <footer class="footer">
@@ -276,7 +278,7 @@
         <br>
         <br>
         <div class="copyright">
-            <p>&copy;2024 TechHR | All Rights Reserved</p>
+            <p id="copyright-year">&copy;2024 TechHR | All Rights Reserved</p>
         </div>
     </footer>
 
@@ -286,6 +288,8 @@
     <script src="javascript/view.js"></script>
     <script src="javascript/alert.js"></script>
     <script src="javascript/login_register.js"></script>
+    <script src="javascript/year.js"></script>
+    <script src="javascript/rating.js"></script>
 
 </body>
 
