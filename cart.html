@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/cart.css" />
     <link rel="stylesheet" href="css/checkout.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>Cart</title>
   </head>
   <body>
@@ -97,7 +98,7 @@
         <div class="title">Shopping Cart</div>
 
         <!-- Product -->
-        <div class="item">
+        <!-- <div class="item">
             
             <div class="image">
                 <img src="products/ASUS ROG Strix G16 G814JIR (Intel 14th Gen,2024).png" alt="product_image" />
@@ -122,9 +123,10 @@
             <button class="delete-btn buttons">
                 X
             </button>
-        </div>
+        </div> -->
+
         <!-- Product -->
-        <div class="item">
+        <!-- <div class="item">
             
             <div class="image">
                 <img src="products/ASUS ROG DELTA S.png" alt="product_image" />
@@ -144,14 +146,14 @@
                 </button>
             </div>
             
-            <div class="    price">$159.00</div>
+            <div class="price">$159.00</div>
 
             <button class="delete-btn buttons">
                 X
             </button>
-        </div>
+        </div> -->
         <!-- Product -->
-        <div class="item">
+        <!-- <div class="item">
             
             <div class="image">
                 <img src="products/Razer DeathAdder V3 Pro - Ergonomic Wireless (White).png" alt="product_image" />
@@ -171,22 +173,23 @@
                 </button>
             </div>
             
-            <div class="    price">$89.00</div>
+            <div class="price">$89.00</div>
 
             <button class="delete-btn buttons">
                 X
             </button>
-        </div>
+        </div> -->
 
         <!-- Cart Footer -->
         <div class="cart-footer item">
             <a href="shop.html" class="main_button">Continue Shopping</a>
+            <button class="clear-cart-btn main_button_red">Clear</button>
             
             <div class="checkout">
                 <div class="total-price">
                     Total: &emsp; <span>$2447</span> <br><br>
                 </div>
-                <a href="#checkout_form" class="main_button">Checkout</a>
+                <a href="#checkout_form" id="checkout-btn" class="main_button">Checkout</a>
             </div>
         </div>
 
@@ -205,7 +208,7 @@
                     <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                     <input type="text" id="fname" name="fname" placeholder="John Pork" required>
                     <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                    <input type="text" id="email" name="email" placeholder="johnpork@example.com" required>
+                    <input type="email" id="email" name="email" placeholder="johnpork@example.com" required>
                     <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
                     <input type="text" id="adr" name="address" placeholder="420 NR. 69 Street" required>
                     <label for="city"><i class="fa fa-institution"></i> City</label>
@@ -392,5 +395,8 @@
     </footer>
 
     <!-- End/ Footer Section -->
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/alert.js"></script>
+
   </body>
 </html>

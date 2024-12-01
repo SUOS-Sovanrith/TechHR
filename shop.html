@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/shop.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>Shop</title>
 </head>
 
@@ -75,28 +76,31 @@
             <div id="category_bar">
                 <div id="category_card">
                     <h2>Category</h2>
-                    <a href="shop.html">Laptops</a>
-                    <a href="shop.html">Desktops</a>
-                    <a href="shop.html">Accesories</a>
+                    <a href="#" class="category-filter" data-category="Laptops">Laptops</a>
+                    <a href="#" class="category-filter" data-category="Desktops">Desktops</a>
+                    <a href="#" class="category-filter" data-category="Accessories">Accesories</a>
                 </div>
+            </div>
+            <div id="filter-container">
+                <button id="clear-filters" class="clear-filters">Clear Filters</button>
             </div>
             <div id="brand_bar">
                 <div id="brand_card">
                     <h2>Brand</h2>
                     <div id="brand_items">
-                        <a href="shop.html"><img src="images/ASUS.jpg" alt="ASUS"></a>
-                        <a href="shop.html"><img src="images/LOGITECH.jpg" alt="LOGITECH.jpg"></a>
-                        <a href="shop.html"><img src="images/SAMSUNG.jpg" alt="SAMSUNG.jpg"></a>
-                        <a href="shop.html"><img src="images/HUAWEI-LOGO.jpg" alt="HUAWEI-LOGO.jpg"></a>
-                        <a href="shop.html"><img src="images/MSI.jpg" alt="MSI.jpg"></a>
-                        <a href="shop.html"><img src="images/RAZER.jpg" alt="RAZER.jpg"></a>
+                        <a href="#" class="brand-filter" data-brand="ASUS"><img src="images/ASUS.jpg" alt="ASUS"></a>
+                        <a href="#" class="brand-filter" data-brand="LOGITECH"><img src="images/LOGITECH.jpg" alt="LOGITECH"></a>
+                        <a href="#" class="brand-filter" data-brand="SAMSUNG"><img src="images/SAMSUNG.jpg" alt="SAMSUNG"></a>
+                        <a href="#" class="brand-filter" data-brand="HUAWEI"><img src="images/HUAWEI-LOGO.jpg" alt="HUAWEI"></a>
+                        <a href="#" class="brand-filter" data-brand="MSI"><img src="images/MSI.jpg" alt="MSI"></a>
+                        <a href="#" class="brand-filter" data-brand="RAZER"><img src="images/RAZER.jpg" alt="RAZER"></a>
                     </div>
                 </div>
             </div>
         </div>
         <div id="col_2">
             <div id="product_menu">
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS Vivobook Go15  OLED E1504GA-L1417W.png" alt="Product Image">
                     </div>
@@ -110,21 +114,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="products/ASUS Vivobook Go15.png" alt="Product Image">
-                    </div>
-                    <h2 class="product-name">
-                        ASUS Vivobook Go15
-                    </h2>
-                    <p class="product-description">
-                        ASUS Vivobook Go15 E1504GA-NJ406W
-                    </p>
-                    <p class="product-price"><sup>$</sup>389.00</p>
-                    <a href="view.html" class="view-detail">View Detail</a>
-                    <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
-                </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS Vivobook16 X1605ZA-MB674W.png" alt="Product Image">
                     </div>
@@ -138,7 +128,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS VIVOBOOK M1505YA-MA258W.png" alt="Product Image">
                     </div>
@@ -151,7 +141,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS VIVOBOOK X1405VA-LY304W.png" alt="Product Image">
                     </div>
@@ -163,7 +153,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS VIVOBOOK X1605VAP-MB067W.png" alt="Product Image">
                     </div>
@@ -175,7 +165,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS X515 X1500KA.png" alt="Product Image">
                     </div>
@@ -188,7 +178,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS Zenbook 14 OLED.png" alt="Product Image">
                     </div>
@@ -201,7 +191,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS ZenBook 14x OLED.png" alt="Product Image">
                     </div>
@@ -214,7 +204,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS TUF A15 (RTX3050).png" alt="Product Image">
                     </div>
@@ -226,7 +216,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS TUF FX707ZV4-HX062W.png" alt="Product Image">
                     </div>
@@ -234,11 +224,11 @@
                         ASUS TUF F17 FX707ZV4</h2>
                     <p class="product-description">
                         ASUS TUF FX707ZV4-HX062W </p>
-                    <p class="product-price"><sup>$</sup>1,199.00</p>
+                    <p class="product-price"><sup>$</sup>1199.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS TUF F17 (Intel 13th RTX 4050).png" alt="Product Image">
                     </div>
@@ -246,11 +236,11 @@
                         ASUS TUF F17 (Intel 13th RTX 4050) </h2>
                     <p class="product-description">
                         ASUS TUF FX707VU-HX102W </p>
-                    <p class="product-price"><sup>$</sup>1,149.00</p>
+                    <p class="product-price"><sup>$</sup>1149.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>  
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS TUF F17 (Intel 13th RTX 4060).png" alt="Product Image">
                     </div>
@@ -258,11 +248,11 @@
                         ASUS TUF F17 (Intel 13th RTX 4060) </h2>
                     <p class="product-description">
                         FX707VV-HX123W-2B-JAEGER GRAY </p>
-                    <p class="product-price"><sup>$</sup>1,249.00</p>
+                    <p class="product-price"><sup>$</sup>1249.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS TUF A15.png" alt="Product Image">
                     </div>
@@ -274,7 +264,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS TUF A15.png" alt="Product Image">
                     </div>
@@ -286,7 +276,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/Asus ROG STRIX G614JU.png" alt="Product Image">
                     </div>
@@ -294,11 +284,11 @@
                         Asus ROG STRIX G614JU </h2>
                     <p class="product-description">
                         ASUS ROG G614JU-N3252W </p>
-                    <p class="product-price"><sup>$</sup>1,299.00</p>
+                    <p class="product-price"><sup>$</sup>1299.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS ROG Strix G16 G614JVR (Intel 14th Gen,2024).png" alt="Product Image">
                     </div>
@@ -306,11 +296,11 @@
                         ASUS ROG Strix G16 G614JVR</h2>
                     <p class="product-description">
                         Asus ROG G614JVR-N3073W </p>
-                    <p class="product-price"><sup>$</sup>1,699.00</p>
+                    <p class="product-price"><sup>$</sup>1699.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS ROG Strix G16 G814JIR (Intel 14th Gen,2024).png" alt="Product Image">
                     </div>
@@ -318,11 +308,11 @@
                         ASUS ROG Strix G16 G814JIR </h2>
                     <p class="product-description">
                         ASUS ROG G814JIR-N6026W </p>
-                    <p class="product-price"><sup>$</sup>2,199.00</p>
+                    <p class="product-price"><sup>$</sup>2199.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS ROG G814JU (Intel 13th Gen).png" alt="Product Image">
                     </div>
@@ -330,11 +320,11 @@
                         ASUS ROG G814JU 13th Gen</h2>
                     <p class="product-description">
                         ASUS ROG G814JU-N6128W </p>
-                    <p class="product-price"><sup>$</sup>1,499.00</p>
+                    <p class="product-price"><sup>$</sup>1499.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS ROG SCAR G834JYR (Intel 14th Gen,2024).png" alt="Product Image">
                     </div>
@@ -346,7 +336,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS Zephyrus G16.png" alt="Product Image">
                     </div>
@@ -354,11 +344,11 @@
                         ASUS Zephyrus G16 </h2>
                     <p class="product-description">
                         Zephyrus GU605MI-QR146W</p>
-                    <p class="product-price"><sup>$</sup>2,599.00</p>
+                    <p class="product-price"><sup>$</sup>2599.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS  Zephyrus Duo 16 (2023).png" alt="Product Image">
                     </div>
@@ -370,7 +360,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Thin 15 B12VE-1449KH.png" alt="Product Image">
                     </div>
@@ -382,7 +372,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Thin 15 B12UC-1447KH.png" alt="Product Image">
                     </div>
@@ -394,7 +384,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Sword 17 HX B14VFKG.png" alt="Product Image">
                     </div>
@@ -402,11 +392,11 @@
                         MSI Sword 17 HX B14VFKG </h2>
                     <p class="product-description">
                         MSI Sword 17 HX B14VFKG-035KH</p>
-                    <p class="product-price"><sup>$</sup>1,599.00</p>
+                    <p class="product-price"><sup>$</sup>1599.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Sword 17 HX B14VEKG.png" alt="Product Image">
                     </div>
@@ -414,11 +404,11 @@
                         MSI Sword 17 HX B14VEKG </h2>
                     <p class="product-description">
                         MSI Sword 17 HX B14VEKG-039KH</p>
-                    <p class="product-price"><sup>$</sup>1,399.00</p>
+                    <p class="product-price"><sup>$</sup>1399.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Stealth 16 AI Studio A1VFG-055KH.png" alt="Product Image">
                     </div>
@@ -426,11 +416,11 @@
                         MSI Stealth 16 AI Studio  </h2>
                     <p class="product-description">
                         MSI Stealth 16 AI Studio A1VFG-055KH </p>
-                    <p class="product-price"><sup>$</sup>1,999.00</p>
+                    <p class="product-price"><sup>$</sup>1999.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI  Vector GP77 13VG-037KH.png" alt="Product Image">
                     </div>
@@ -438,11 +428,11 @@
                         MSI Vector GP77 13VG</h2>
                     <p class="product-description">
                         MSI Vector GP77 13VG-037KH</p>
-                    <p class="product-price"><sup>$</sup>1,999.00</p>
+                    <p class="product-price"><sup>$</sup>1999.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Creator Z17HXStudio.png" alt="Product Image">
                     </div>
@@ -450,11 +440,11 @@
                         MSI Creator Z17HXStudio </h2>
                     <p class="product-description">
                         MSI Creator Z17 A13VGT-051KH</p>
-                    <p class="product-price"><sup>$</sup>2,899.00</p>
+                    <p class="product-price"><sup>$</sup>2899.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Creator Z16 A12UET.png" alt="Product Image">
                     </div>
@@ -462,11 +452,11 @@
                         MSI Creator Z16 A12UET </h2>
                     <p class="product-description">
                         MSI Creator Z16 A12UET-061KH</p>
-                    <p class="product-price"><sup>$</sup>2,299.00</p>
+                    <p class="product-price"><sup>$</sup>2299.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Prestige 16Studio.png" alt="Product Image">
                     </div>
@@ -474,11 +464,11 @@
                         MSI Prestige 16Studio </h2>
                     <p class="product-description">
                         MSI Prestige 16Studio A13VE-230KH</p>
-                    <p class="product-price"><sup>$</sup>1,699.00</p>
+                    <p class="product-price"><sup>$</sup>1699.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="MSI">
                     <div class="product-img">
                         <img src="products/MSI Katana 17 B13VFK-1229KH.png" alt="Product Image">
                     </div>
@@ -486,11 +476,11 @@
                         MSI Katana 17 B13VFK</h2>
                     <p class="product-description">
                         MSI Katana 17 B13VFK-1229KH</p>
-                    <p class="product-price"><sup>$</sup>1,249.00</p>
+                    <p class="product-price"><sup>$</sup>1249.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="">
                     <div class="product-img">
                         <img src="products/Lenovo  IdeaPad 1 (14”, Intel).png" alt="Product Image">
                     </div>
@@ -502,7 +492,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="">
                     <div class="product-img">
                         <img src="products/HP Victus 16-D1008 GAMING.png" alt="Product Image">
                     </div>
@@ -514,7 +504,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="">
                     <div class="product-img">
                         <img src="products/AORUS 15 GAMING 2023.png" alt="Product Image">
                     </div>
@@ -522,11 +512,11 @@
                         AORUS 15 GAMING 2023</h2>
                     <p class="product-description">
                         AORUS 15 GAMING 2023 13th GEN</p>
-                    <p class="product-price"><sup>$</sup>1,799.00</p>
+                    <p class="product-price"><sup>$</sup>1799.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Laptops" data-brand="">
                     <div class="product-img">
                         <img src="products/Gigabyte A5 K1-(AUS1130SB).png" alt="Product Image">
                     </div>
@@ -538,7 +528,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 1.png" alt="Product Image">
                     </div>
@@ -550,7 +540,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 2.png" alt="Product Image">
                     </div>
@@ -562,7 +552,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 3.png" alt="Product Image">
                     </div>
@@ -574,7 +564,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 4.png" alt="Product Image">
                     </div>
@@ -586,7 +576,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 5.png" alt="Product Image">
                     </div>
@@ -598,7 +588,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 6.png" alt="Product Image">
                     </div>
@@ -610,7 +600,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 7.png" alt="Product Image">
                     </div>
@@ -622,7 +612,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 8.png" alt="Product Image">
                     </div>
@@ -634,7 +624,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 9.png" alt="Product Image">
                     </div>
@@ -646,7 +636,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 10.png" alt="Product Image">
                     </div>
@@ -658,7 +648,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 11.png" alt="Product Image">
                     </div>
@@ -670,7 +660,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Desktops" data-brand="SAMSUNG">
                     <div class="product-img">
                         <img src="products/pc build 12.png" alt="Product Image">
                     </div>
@@ -682,7 +672,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Iskur X Gaming Chair.png" alt="Product Image">
                     </div>
@@ -694,7 +684,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Kiyo X – USB Broadcasting Camera.png" alt="Product Image">
                     </div>
@@ -706,7 +696,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Opus X – Active Noise Cancellation Headset.png" alt="Product Image">
                     </div>
@@ -718,7 +708,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Kraken V3 X – Wired USB Gaming Headset.png" alt="Product Image">
                     </div>
@@ -730,7 +720,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Kraken V3 Pro Wireless - Haptic Technology, THX Spatial Audio, 50mm Titanium Drivers, Hybrid Memory Foam Cushions.png" alt="Product Image">
                     </div>
@@ -742,7 +732,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Kraken V3 HyperSense – Wired USB Gaming Headset With Haptic Technology.png" alt="Product Image">
                     </div>
@@ -754,7 +744,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Kraken Kitty V2 Wired Headset for PC, Stream Reactive RGB Lighting, 325 g, Black.png" alt="Product Image">
                     </div>
@@ -766,7 +756,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Kraken Kitty RGB USB THX 7.1 Spatial Surround Sound.png" alt="Product Image">
                     </div>
@@ -778,7 +768,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Kraken Kitty – Chroma USB Gaming Headset.png" alt="Product Image">
                     </div>
@@ -790,7 +780,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackShark V2 X USB - 7.1 Surround Sound, 50mm Drivers, Noise Cancelling Mic.png" alt="Product Image">
                     </div>
@@ -802,7 +792,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackShark V2 X – Wired Gaming Headset.png" alt="Product Image">
                     </div>
@@ -814,7 +804,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackShark V2 Pro – Wireless Gaming Headset.png" alt="Product Image">
                     </div>
@@ -826,7 +816,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackShark V2 – Wired Gaming Headset + USB Sound Card.png" alt="Product Image">
                     </div>
@@ -838,7 +828,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="">
                     <div class="product-img">
                         <img src="products/MARVO HG8935.png" alt="Product Image">
                     </div>
@@ -850,7 +840,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech G335 Wired Gaming Headset, with Flip to Mute Microphone, 3.5mm Audio Jack, Memory Foam Earpads - White.png" alt="Product Image">
                     </div>
@@ -862,7 +852,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech G335 Wired Gaming Headset, with Flip to Mute Microphone, 3.5mm Audio Jack, Memory Foam Earpads.png" alt="Product Image">
                     </div>
@@ -874,7 +864,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="">
                     <div class="product-img">
                         <img src="products/Corsair HS55 Surround Gaming Headset (Leatherette Memory Foam Ear Pads).png" alt="Product Image">
                     </div>
@@ -886,7 +876,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS ROG FUSION II 500.png" alt="Product Image">
                     </div>
@@ -898,7 +888,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/ASUS ROG DELTA S.png" alt="Product Image">
                     </div>
@@ -910,7 +900,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="ASUS">
                     <div class="product-img">
                         <img src="products/Razer Death Adder Essential Black.png" alt="Product Image">
                     </div>
@@ -922,7 +912,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Death Adder Essential White Edition.png" alt="Product Image">
                     </div>
@@ -934,7 +924,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Basilisk Ultimate -Wireless Gaming Mouse With Charging Dock.png" alt="Product Image">
                     </div>
@@ -946,7 +936,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Viper V3 HyperSpeed Wireless.png" alt="Product Image">
                     </div>
@@ -958,7 +948,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Orochi V2 – Wireless Gaming Mouse.png" alt="Product Image">
                     </div>
@@ -970,7 +960,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Naga V2 HyperSpeed Wireless MMO - HyperScroll Technology - Focus Pro 30K Optical Sensor - Switches Gen-2.png" alt="Product Image">
                     </div>
@@ -982,7 +972,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer DeathAdder V3 Pro - Ergonomic Wireless (White).png" alt="Product Image">
                     </div>
@@ -994,7 +984,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Deathadder V2 X Hyperspeed.png" alt="Product Image">
                     </div>
@@ -1006,7 +996,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer DeathAdder V2 Pro Ergonomic Wireless Gaming Mouse.png" alt="Product Image">
                     </div>
@@ -1018,7 +1008,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer™ BlackWidow V3 – Mechanical Gaming Keyboard (Green Switch) – Quartz Edition.png" alt="Product Image">
                     </div>
@@ -1030,7 +1020,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Ornata V3 X – Low Profile Gaming Keyboard.png" alt="Product Image">
                     </div>
@@ -1042,7 +1032,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Ornata V3 - Low Profile.png" alt="Product Image">
                     </div>
@@ -1054,7 +1044,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Huntsman V2 Tenkeyless – Optical Gaming Keyboard (Linear Red Switch).png" alt="Product Image">
                     </div>
@@ -1066,7 +1056,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Huntsman V2 Analog – Optical Gaming Keyboard – US Layout.png" alt="Product Image">
                     </div>
@@ -1078,7 +1068,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer Huntsman Mini – Optical Gaming Keyboard (Linear Red Switch).png" alt="Product Image">
                     </div>
@@ -1090,7 +1080,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackWidow V3 Tenkeyless – Mechanical Gaming Keyboard.png" alt="Product Image">
                     </div>
@@ -1102,7 +1092,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackWidow V3 Pro – Wireless Mechanical Gaming Keyboard.png" alt="Product Image">
                     </div>
@@ -1114,7 +1104,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackWidow V3 Mini HyperSpeed.png" alt="Product Image">
                     </div>
@@ -1126,7 +1116,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackWidow V3 – Mechanical Gaming Keyboard.png" alt="Product Image">
                     </div>
@@ -1138,7 +1128,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="RAZER">
                     <div class="product-img">
                         <img src="products/Razer BlackWidow – Mechanical Gaming Keyboard – US Layout.png" alt="Product Image">
                     </div>
@@ -1150,7 +1140,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="">
                     <div class="product-img">
                         <img src="products/AKKO Ocean Star Multi-Mode Akko Crystal.png" alt="Product Image">
                     </div>
@@ -1162,7 +1152,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech Signature M650 M Wireless Mouse For Business.png" alt="Product Image">
                     </div>
@@ -1174,7 +1164,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech POP MOUSE – Wireless Mouse With Customizable Emoji.png" alt="Product Image">
                     </div>
@@ -1186,7 +1176,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech Pebble M350- Modern, Slim, Silent Mouse.png" alt="Product Image">
                     </div>
@@ -1198,7 +1188,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Master 3S Performance Wireless Mouse For Business – Graphite.png" alt="Product Image">
                     </div>
@@ -1210,7 +1200,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Master 3S For Mac Mouse Pale-Grey.png" alt="Product Image">
                     </div>
@@ -1222,7 +1212,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Master 3 For Mac – Advanced Wireless Mouse.png" alt="Product Image">
                     </div>
@@ -1234,7 +1224,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Anywhere 3S Wireless Mouse.png" alt="Product Image">
                     </div>
@@ -1246,7 +1236,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech Signature MK650 Wireless Desktop Combo For Business.png" alt="Product Image">
                     </div>
@@ -1258,7 +1248,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech Signature K650 Wireless Keyboard.png" alt="Product Image">
                     </div>
@@ -1270,7 +1260,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech POP KEYS – Wireless Mechanical Keyboard With Customizable Emoji Keys.png" alt="Product Image">
                     </div>
@@ -1282,7 +1272,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Mechanical Mini For Mac Pale-Grey Tactile.png" alt="Product Image">
                     </div>
@@ -1294,7 +1284,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Keys Wireless Keyboard For Business – Graphite.png" alt="Product Image">
                     </div>
@@ -1306,7 +1296,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Keys Wireless Desktop Combo For Business Gen 2 – Graphite.png" alt="Product Image">
                     </div>
@@ -1318,7 +1308,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Keys Mini Wireless Keyboard For Business.png" alt="Product Image">
                     </div>
@@ -1330,7 +1320,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Keys Mini Wireless Desktop Combo For Business – Graphite.png" alt="Product Image">
                     </div>
@@ -1342,7 +1332,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech MX Keys For Mac – Wireless Illuminated Keyboard.png" alt="Product Image">
                     </div>
@@ -1354,7 +1344,7 @@
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="Accessories" data-brand="LOGITECH">
                     <div class="product-img">
                         <img src="products/Logitech Mx Keys Advanced Wireless Illuminated Keyboard.png" alt="Product Image">
                     </div>
@@ -1365,6 +1355,9 @@
                     <p class="product-price"><sup>$</sup>79.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
+                </div>
+                <div id="no-products-message" style="display: none;">
+                    <h4>No product found :(</h4>
                 </div>
             </div>
         </div>
@@ -1482,7 +1475,9 @@
     </footer>
 
     <!-- End/ Footer Section -->
-
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/shop_filter.js"></script>
+    <script src="javascript/alert.js"></script>
 
 </body>
 

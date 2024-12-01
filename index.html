@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/product_card.css">
+    <link rel="stylesheet" href="css/focus_error.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>Tech HR </title>
 </head>
 <body>
-    
+
     <!-- Start/ Header Section -->
     <header>
         <div id="top-bar">
@@ -83,7 +85,7 @@
                     <p class="product-description">
                         ASUS TUF FX707ZV4-HX062W
                     </p>
-                    <p class="product-price"><sup>$</sup>1,199.00</p>
+                    <p class="product-price"><sup>$</sup>1199.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
@@ -97,7 +99,7 @@
                     <p class="product-description">
                         ASUS ROG G814JU-N6128W
                     </p>
-                    <p class="product-price"><sup>$</sup>1,499.00</p>
+                    <p class="product-price"><sup>$</sup>1499.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
@@ -111,7 +113,7 @@
                     <p class="product-description">
                         MSI Vector GP77 13VG-037KH
                     </p>
-                    <p class="product-price"><sup>$</sup>1,999.00</p>
+                    <p class="product-price"><sup>$</sup>1999.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
@@ -283,7 +285,7 @@
                     <p class="product-description">
                         MSI Stealth 16 AI Studio A1VFG-055KH
                     </p>
-                    <p class="product-price"><sup>$</sup>1,999.00</p>
+                    <p class="product-price"><sup>$</sup>1999.00</p>
                     <a href="view.html" class="view-detail">View Detail</a>
                     <a href="cart.html"><button class="add-cart-btn">Add To Cart</button></a>
                 </div>
@@ -417,11 +419,11 @@
     <h2>Log In</h2>
     <form action="#">
         <div class="form-control">
-            <input type="text" required>
-            <label>Email or phone number</label>
+            <input type="text" id="login-email" required>
+            <label>Email</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
+            <input type="password" id="login-password" required>
             <label>Password</label>
         </div>
         <button type="submit">Log In</button>
@@ -442,22 +444,22 @@
     <h2>Register</h2>
     <form action="#">
         <div class="form-control">
-            <input type="text" required>
+            <input type="text" id="register-username" required>
             <label>Username</label>
         </div>
         <div class="form-control">
-            <input type="text" required>
-            <label>Email or phone number</label>
+            <input type="text" id="register-email" required>
+            <label>Email</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
+            <input type="password" id="register-password" required>
             <label>Password</label>
         </div>
         <div class="form-control">
-            <input type="password" required>
+            <input type="password" id="confirm-password" required>
             <label>Confirm Password</label>
         </div>
-        <button type="submit">Log In</button>
+        <button type="submit">Sign Up</button>
     </form>
     <p>Already have an account? <a href="#login_form">Login now!</a></p>
 </div>
@@ -469,9 +471,9 @@
         <section id="section_newsletter">
             <h1>Join Tech<span>HR</span> Newsletter Now!</h1>
             <h4>Get Gifts, Promocodes, And More</h4>
-                <input type="text" name="name_input" id="name_input" placeholder="Your Name">
+                <input type="text" name="name_input" id="name_input" placeholder="Your Name" required>
                 <br>
-                <input type="text" name="email_input" id="email_input" placeholder="Your Email">
+                <input type="email" name="email_input" id="email_input" placeholder="Your Email" required>
                 <br>
                 <button type="submit" class="main_button">Subscribe</button>
         </section>
@@ -531,7 +533,9 @@
     </footer>
 
     <!-- End/ Footer Section -->
-
+    <script src="javascript/login_register.js"></script>
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/alert.js"></script>
 
 </body>
 </html>
