@@ -93,8 +93,8 @@ td span {
   font-weight: 300;
 }
 
-.plus-btn,
-.minus-btn {
+.plus-btn-view,
+.minus-btn-view {
   width: 30px;
   height: 30px;
   background-color: #02577a;
@@ -121,7 +121,7 @@ td span {
   display: inline-block;
 }
 
-.add-btn {
+.add-cart-view-btn {
   margin-left: 12px;
   border: none;
   width: 200px;
@@ -138,14 +138,14 @@ td span {
   transition: all 0.1s linear;
 }
 
-.add-btn:hover {
+.add-cart-view-btn:hover {
   color: #fff;
   background-color: #027aad;
   transform: translateY(-3px);
   box-shadow: 0 3px 5px #01303f;
 }
 
-.add-btn:active {
+.add-cart-view-btn:active {
   transform: translateY(0px);
   box-shadow: 0 0 0 #01303f;
 }
