@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return false;
             }
         }
+        
 
         // Validate password (both forms)
         if (input.type === 'password') {
