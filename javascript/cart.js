@@ -123,15 +123,19 @@ $(document).ready(function () {
 
     // Clear Cart
     $('.clear-cart-btn').on('click', function () {
-        showConfirmation("Are you sure you want to delete this item from the cart?").then(function (confirmed) {
-            if (confirmed) {
-                cart = [];
-                saveCart();
-                renderCart();
-            }
-        }).catch(function (error) {
-            console.error("Error in confirmation:", error);
-        });
+        if (cart.length === 0) {
+            showAlert('warning', 'Your cart is empty.')
+        }else{
+            showConfirmation("Are you sure you want to delete this item from the cart?").then(function (confirmed) {
+                if (confirmed) {
+                    cart = [];
+                    saveCart();
+                    renderCart();
+                }
+            }).catch(function (error) {
+                console.error("Error in confirmation:", error);
+            });
+        }
     });
 
     // check cart for checkout

@@ -18,6 +18,18 @@ function rateProduct(starValue) {
     rating = starValue;
     updateStars(rating);
     
-    // Optionally, you can send this rating to the server using AJAX here
     console.log("Rated product with " + rating + " stars.");
 }
+
+// start with 5 star
+rateProduct(5);
+
+$("#rating-form").on('submit', function (e) {
+    e.preventDefault();
+
+    $('#name_input').val('');
+    $('#review_input').val('');
+    rateProduct(5);
+
+    showAlert("success", "Your rating has been submitted.");
+});
