@@ -1,17 +1,28 @@
 .form-control {
+<<<<<<< HEAD
+    position: relative;
+=======
     position: relative;   
+>>>>>>> 18eb97b71299220ef29fb813985ea6979308ea38
 }
 
 .form-control.error input {
     border-color: red;
+<<<<<<< HEAD
+=======
     margin-bottom: 4px;
     box-sizing: border-box;
     width: 100%;
+>>>>>>> 18eb97b71299220ef29fb813985ea6979308ea38
 }
 
 .form-control .error-message {
     color: red;
     font-size: 12px;
+<<<<<<< HEAD
+    margin-top: 5px;
+=======
     margin-bottom: 5px;
+>>>>>>> 18eb97b71299220ef29fb813985ea6979308ea38
     display: block;
 }
