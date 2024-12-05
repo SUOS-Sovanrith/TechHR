@@ -46,18 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Validate email (only for Login and Register)
         if (input.parentElement.querySelector('label').innerText === 'Email') {
             if (!emailRegex.test(value)) {
-<<<<<<< HEAD
-                showError(input, 'Enter a valid email address.');
-                return false;
-            }
-        }
-=======
                 showError(input, 'Enter a valid email address. Eg: abcd@gmail.com');
                 return false;
             }
         }
         
->>>>>>> 18eb97b71299220ef29fb813985ea6979308ea38
 
         // Validate password (both forms)
         if (input.type === 'password') {
@@ -108,17 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (isValid) {
-<<<<<<< HEAD
-            alert('Registration successful! Welcome.');
-            registerForm.reset(); // Clear the form
-        } else {
-            alert('Please fix the errors in the form before registering.');
-=======
             showAlert('success', 'Registration successful! Welcome.');
             registerForm.reset(); // Clear the form
         } else {
             showAlert('danger', 'Registration failed! Please fix the errors.');
->>>>>>> 18eb97b71299220ef29fb813985ea6979308ea38
         }
     });
 
@@ -133,17 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (isValid) {
-<<<<<<< HEAD
-            alert('Login successful! Welcome back.');
-            loginForm.reset(); // Clear the form
-        } else {
-            alert('Please fix the errors in the form before logging in.');
-=======
             showAlert('success', 'Login successful! Welcome back.');
             loginForm.reset(); // Clear the form
         } else {
             showAlert('danger', 'Login failed! Please fix the errors before proceeding.');
->>>>>>> 18eb97b71299220ef29fb813985ea6979308ea38
         }
     });
 });
