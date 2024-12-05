@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/focus_error.css">
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link
@@ -160,56 +161,56 @@
     <!-- End/ Main Section -->
 
     <!-- Start Login -->
-    <div class="form-wrapper" id="login_form">
-      <h2 class="close_login"><a href="#">X</a></h2>
-      <h2>Log In</h2>
-      <form action="#">
-        <div class="form-control">
-          <input type="text" required />
-          <label>Email or phone number</label>
-        </div>
-        <div class="form-control">
-          <input type="password" required />
+<div class="form-wrapper" id="login_form">
+  <h2 class="close_login"><a href="#">X</a></h2>
+  <h2>Log In</h2>
+  <form action="#">
+      <div class="form-control">
+          <input type="text" id="login-email" required>
+          <label>Email</label>
+      </div>
+      <div class="form-control">
+          <input type="password" id="login-password" required>
           <label>Password</label>
-        </div>
-        <button type="submit">Log In</button>
-        <div class="form-help">
+      </div>
+      <button type="submit">Log In</button>
+      <div class="form-help"> 
           <div class="remember-me">
-            <input type="checkbox" id="remember-me" />
-            <label for="remember-me">Remember me</label>
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
           </div>
-        </div>
-      </form>
-      <p>Doesn't have an account? <a href="#register_form">Register now!</a></p>
-    </div>
-    <!-- End Login-->
+      </div>
+  </form>
+  <p>Doesn't have an account? <a href="#register_form">Register now!</a></p>
+</div>
+<!-- End Login-->
 
-    <!-- Start Register -->
-    <div class="form-wrapper" id="register_form">
-      <h2 class="close_login"><a href="#">X</a></h2>
-      <h2>Register</h2>
-      <form action="#">
-        <div class="form-control">
-          <input type="text" required />
+<!-- Start Register -->
+<div class="form-wrapper" id="register_form">
+  <h2 class="close_login"><a href="#">X</a></h2>
+  <h2>Register</h2>
+  <form action="#">
+      <div class="form-control">
+          <input type="text" id="register-username" required>
           <label>Username</label>
-        </div>
-        <div class="form-control">
-          <input type="text" required />
-          <label>Email or phone number</label>
-        </div>
-        <div class="form-control">
-          <input type="password" required />
+      </div>
+      <div class="form-control">
+          <input type="text" id="register-email" required>
+          <label>Email</label>
+      </div>
+      <div class="form-control">
+          <input type="password" id="register-password" required>
           <label>Password</label>
-        </div>
-        <div class="form-control">
-          <input type="password" required />
+      </div>
+      <div class="form-control">
+          <input type="password" id="confirm-password" required>
           <label>Confirm Password</label>
-        </div>
-        <button type="submit">Log In</button>
-      </form>
-      <p>Already have an account? <a href="#login_form">Login now!</a></p>
-    </div>
-    <!-- End Register-->
+      </div>
+      <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a href="#login_form">Login now!</a></p>
+</div>
+<!-- End Register-->
 
     <!-- Start/ Footer Section -->
     <footer class="footer">
@@ -277,14 +278,17 @@
       <br />
       <br />
       <div class="copyright">
-        <p>&copy;2024 TechHR | All Rights Reserved</p>
-      </div>
+        <p id="copyright-year">&copy;2024 TechHR | All Rights Reserved</p>
+    </div>
     </footer>
 
     <!-- End/ Footer Section -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="javascript/alert.js"></script>
+    <script src="javascript/login_register.js"></script>
+    <script src="javascript/year.js"></script>
+
     
   </body>
 </html>

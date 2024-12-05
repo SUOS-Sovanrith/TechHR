@@ -46,10 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Validate email (only for Login and Register)
         if (input.parentElement.querySelector('label').innerText === 'Email') {
             if (!emailRegex.test(value)) {
-                showError(input, 'Enter a valid email address.');
+                showError(input, 'Enter a valid email address. Eg: abcd@gmail.com');
                 return false;
             }
         }
+        
 
         // Validate password (both forms)
         if (input.type === 'password') {
@@ -100,10 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (isValid) {
-            alert('Registration successful! Welcome.');
+            showAlert('success', 'Registration successful! Welcome.');
             registerForm.reset(); // Clear the form
         } else {
-            alert('Please fix the errors in the form before registering.');
+            showAlert('danger', 'Registration failed! Please fix the errors.');
         }
     });
 
@@ -118,10 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (isValid) {
-            alert('Login successful! Welcome back.');
+            showAlert('success', 'Login successful! Welcome back.');
             loginForm.reset(); // Clear the form
         } else {
-            alert('Please fix the errors in the form before logging in.');
+            showAlert('danger', 'Login failed! Please fix the errors before proceeding.');
         }
     });
 });
